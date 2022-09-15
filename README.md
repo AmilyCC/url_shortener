@@ -17,6 +17,8 @@
 
 ### 線上使用 [https://stark-gorge-80531.herokuapp.com/]
 
+### 載到本地
+
 1. 請先確認有安裝 node.js 與 npm
 2. 將專案 clone 到本地
 3. 在本地開啟之後，透過終端機進入資料夾，輸入：
