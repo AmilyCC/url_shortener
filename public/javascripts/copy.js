@@ -6,7 +6,7 @@ if(typeof document === "undefined"){
   })
   const btnCopy = document.querySelector('.btn-copy');
   $(btnCopy).attr('data-bs-original-title', 'Click to copy.')
-  btnCopy.onclick = function copyIt() {
+  try{btnCopy.addEventListener('click', function copyIt() {
       const text = document.querySelector('.input-text').value;
       navigator.clipboard.writeText(text)
       .then(() => {
@@ -19,7 +19,10 @@ if(typeof document === "undefined"){
       .catch(err => {
           console.error('Error in copying text: ', err);
       });
+    })
+  }catch (error) {
   }
+
   
 }
 
