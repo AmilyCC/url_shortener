@@ -17,7 +17,7 @@
 
 ### 線上使用
 
-[https://stark-gorge-80531.herokuapp.com/]
+- herokuapp https://stark-gorge-80531.herokuapp.com/
 
 ### 載到本地
 
@@ -49,11 +49,18 @@
 
 ## 開發工具
 
+- Node.js 16.14.0
+- Express 4.17.1
+- Express-Handlebars 4.0.2
+- Bootstrap 5.0.2
+- Font-awesome 5.8.1no
 - body-parser 1.20.0
-- express 4.17.1
-- express-handlebars 4.0.2
+- mongoose 6.6.0
 - jquery 3.6.1
 - jsdom 20.0.0
 - method-override 3.0.0
-- mongoose 6.6.0
 - nodemon 2.0.19
+
+## 雲端佈署
+
+- Heroku
