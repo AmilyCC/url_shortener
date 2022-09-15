@@ -15,7 +15,9 @@
 
 ## 開始使用
 
-### 線上使用 [https://stark-gorge-80531.herokuapp.com/]
+### 線上使用
+
+[https://stark-gorge-80531.herokuapp.com/]
 
 ### 載到本地
 
