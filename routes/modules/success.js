@@ -7,7 +7,7 @@ require('../../public/javascripts/copy')
 router.get('/:id', (req, res) => {
   const host = req.get('host')
   const path = req.params.id
-  const newUrl = `https://${host}/${path}`
+  const newUrl = `http://${host}/${path}`
   res.render('success',{newUrl})
 })
 
