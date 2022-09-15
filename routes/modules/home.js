@@ -31,20 +31,19 @@ router.post('/', (req, res) => {
   })
 
 //新網址跳轉
-router.get('/xeWH3', (req, res) => {
-    res.redirect('https://www.netflix.com/browse')
-    // const id = req.params.id
-    // URL.find({id: id})
-    //   .lean()
-    //   .then((url) => {
-    //     const reUrl = url[0]
-    //     if(!reUrl){}
-    //     else{
-    //       let yourUrl = reUrl.yourUrl
-    //     res.redirect(yourUrl)
-    //     }
-    //   }      
-    //   )
+router.get('/:id', (req, res) => {
+    const id = req.params.id
+    URL.find({id: id})
+      .lean()
+      .then((url) => {
+        const reUrl = url[0]
+        if(!reUrl){}
+        else{
+          let yourUrl = reUrl.yourUrl
+        res.redirect(yourUrl)
+        }
+      }      
+      )
       .catch(error => console.log(error))
 })
 
