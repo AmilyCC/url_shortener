@@ -1,0 +1,14 @@
+<div class="container m-auto d-flex flex-column justify-content-center">
+  <h1 class="mx-auto my-3">URL Shortener</h1>
+  <img class="m-auto" style="width:100px;" src="../static/image/link-image.png">
+
+  <div class="input-group my-3">
+    <span class="btn btn-primary input-group-text" id="basic-addon3"> New URL </span>
+    <input type="text" name="newUrl" class="form-control input-text" value="{{newUrl}}" id="basic-url" aria-describedby="basic-addon3" disabled>
+    <button type="button" style="width:42px" class="btn btn-secondary btn-copy" onclick="copyIt()" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-placement="bottom"><i class="fa-regular fa-copy"></i></button>
+  </div>
+  <div class="alert alert-warning my-3" role="alert">
+    Good Job! Please use the new link!
+  </div>
+
+</div>
